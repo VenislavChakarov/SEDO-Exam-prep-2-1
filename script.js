@@ -12,7 +12,7 @@ addBtn.addEventListener('click', () => {
   input.value = '';
 });
 
-// Toggle complete
+// Toggle complete  on click
 list.addEventListener('click', e => {
   if (e.target.tagName === 'LI') {
     e.target.classList.toggle('completed');
@@ -32,3 +32,4 @@ clearBtn.addEventListener('click', () => {
   document.querySelectorAll('#task-list li.completed')
     .forEach(li => li.remove());
 });
+
